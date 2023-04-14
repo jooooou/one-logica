@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha(){
+	document.write("<br><br>");
+}
+
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+var vitorias = parseInt(prompt(`Entre com o número de vítorias:`));
+var empates = parseInt(prompt(`Entre com o número de empates:`));
+
+var pontos = (vitorias * 3) + empates;
+
+mostra(`Os pontos do seu time é: ${pontos}`);
+
+// switch (true){
+// case pontos > 18:
+// 	mostra(`Seu time está melhor do que o ano passado.`);
+// 	break;
+// case pontos < 18:
+// 	mostra(`Seu time está pior do que o ano passado.`);
+// 	break;
+// case pontos == 18:
+// 	mostra(`Seu time está igual ao ano passado.`);
+// 	break;
+// default:
+// 	mostra(`Inválido.`);
+// 	break;
+// };
+
+
+if (pontos > 28) {
+	mostra(`Seu time está melhor do que o ano passado.`);
+}
+else if (pontos < 28) {
+	mostra(`Seu time está pior do que o ano passado.`);
+}
+else if (pontos == 28){
+	mostra(`Seu time está igual ao ano passado.`);
+}
+else {
+	mostra(`Pontuação inválida.`)
+}
+
+mostra(`FIM`);
+</script>

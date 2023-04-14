@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha(){
+		document.write("<br><br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var numero = parseInt(prompt("Digite um número para descobrir sua tabuada:"))
+
+	var multiplicador = 1;
+
+	// while(multiplicador <= 10){
+	// 	mostra(`${numero} x ${multiplicador} = ${(numero * multiplicador)}`);
+	// 	multiplicador++
+	// }
+
+	for(var multiplicador = 1;multiplicador <= 10;multiplicador++){
+		mostra(`${numero} x ${multiplicador} = ${(numero * multiplicador)}`)
+	}
+
+
+
+</script>
